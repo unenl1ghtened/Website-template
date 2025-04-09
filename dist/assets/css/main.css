@@ -339,35 +339,35 @@ template {
   --succes-color-70: #e2f8f033;
 }
 @font-face {
-  src: local("$font-family"), url("../fonts/InterRegular.woff2") format("woff2"), url("../fonts/InterRegular.woff") format("woff");
+  src: local("$font-family"), url("/Website-template/assets/fonts/InterRegular.woff2") format("woff2"), url("/Website-template/assets/fonts/InterRegular.woff") format("woff");
   font-family: Inter;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: local("$font-family"), url("../fonts/InterMedium.woff2") format("woff2"), url("../fonts/InterMedium.woff") format("woff");
+  src: local("$font-family"), url("/Website-template/assets/fonts/InterMedium.woff2") format("woff2"), url("/Website-template/assets/fonts/InterMedium.woff") format("woff");
   font-family: Inter;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: local("$font-family"), url("../fonts/InterSemiBold.woff2") format("woff2"), url("../fonts/InterSemiBold.woff") format("woff");
+  src: local("$font-family"), url("/Website-template/assets/fonts/InterSemiBold.woff2") format("woff2"), url("/Website-template/assets/fonts/InterSemiBold.woff") format("woff");
   font-family: Inter;
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: local("$font-family"), url("../fonts/InterBold.woff2") format("woff2"), url("../fonts/InterBold.woff") format("woff");
+  src: local("$font-family"), url("/Website-template/assets/fonts/InterBold.woff2") format("woff2"), url("/Website-template/assets/fonts/InterBold.woff") format("woff");
   font-family: Inter;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: local("$font-family"), url("../fonts/RobotoMedium.woff2") format("woff2"), url("../fonts/RobotoMedium.woff") format("woff");
+  src: local("$font-family"), url("/Website-template/assets/fonts/RobotoMedium.woff2") format("woff2"), url("/Website-template/assets/fonts/RobotoMedium.woff") format("woff");
   font-family: Roboto;
   font-weight: 500;
   font-style: normal;

@@ -1,5 +1,6 @@
 // <!--========PRICE START========  -->
-.price {
+/* stylelint-disable-next-line selector-class-pattern */
+.price_1 {
   padding: 90px 0 78px;
 
   @include mobile {
@@ -7,15 +8,15 @@
   }
 
   &__top {
-    padding-bottom: 186px;
+    padding-bottom: 106px;
     text-align: center;
 
     @include tablet {
-      padding-bottom: 120px;
+      padding-bottom: 20px;
     }
 
     @include mobile {
-      padding-bottom: 56px;
+      padding-bottom: 0;
     }
 
     &::before {
@@ -52,54 +53,6 @@
 
     @include mobile {
       margin-bottom: 36px;
-    }
-  }
-
-  &__switcher {
-    appearance: none;
-    position: relative;
-    border-radius: 12px;
-    width: 44px;
-    height: 24px;
-    background-color: var(--neutral-color-30);
-
-    &-wrapper {
-      @include flex-all-center;
-      display: inline-flex;
-      gap: 12px;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      display: inline-block;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      background-color: var(--primary-color-30);
-      opacity: 0.6;
-      transition:
-        left var(--transition),
-        opacity var(--transition);
-    }
-
-    &-text {
-      font-weight: 500;
-      line-height: 1.62;
-      color: var(--neutral-color-150);
-    }
-
-    &-checkbox {
-      appearance: none;
-    }
-
-    &:has(&-checkbox:checked) {
-      &::before {
-        left: 22px;
-        opacity: 1;
-      }
     }
   }
 

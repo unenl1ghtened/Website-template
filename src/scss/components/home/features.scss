@@ -1,140 +1,122 @@
 // <!--========FEATURES START========  -->
 /* stylelint-disable-next-line selector-class-pattern */
-.features_1 {
-  &__container {
-    border-bottom: 1px solid var(--neutral-color-30);
-    padding-top: 66px;
-    padding-bottom: 166px;
+.feaures_1 {
+  padding: 120px 0;
+  background-color: var(--black-bg-color);
+
+  @include small-mobile {
+    padding: 90px 0;
+  }
+
+  &__top {
+    padding-bottom: 106px;
+    text-align: center;
+
+    @include tablet {
+      padding-bottom: 20px;
+    }
 
     @include mobile {
-      padding-top: 26px;
-      padding-bottom: 70px;
+      padding-bottom: 0;
+    }
+
+    &::before {
+      top: 20px;
+    }
+
+    &::after {
+      bottom: -320px;
+    }
+  }
+
+  &__desc {
+    margin: 0 auto 56px;
+    max-width: 903px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include mobile {
+      margin-bottom: 36px;
     }
   }
 
   &__list {
-    @include flex-align-center;
-
-    @include tablet {
-      gap: 62px;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
-    }
+    display: grid;
+    gap: 0 32px;
+    grid-template-columns: repeat(2, 1fr);
 
     @include small-tablet {
-      gap: 45px;
+      gap: 90px;
+      justify-items: center;
+      grid-template-columns: 1fr;
     }
 
     @include mobile {
-      gap: 35px;
+      gap: 65px;
     }
   }
 
   &__item {
-    @include tablet {
-      justify-content: center;
-      min-width: 325px;
-    }
+    display: inline-block;
+    max-width: 584px;
 
-    @include mobile {
-      min-width: 240px;
-    }
+    &:nth-child(4n + 1),
+    &:nth-child(4n + 4) {
+      max-height: 991px;
 
-    &:not(:last-child) {
-      @include flex-align-center;
-      padding-right: 72px;
+      @include mini-desktop {
+        max-height: 791px;
+      }
 
       @include tablet {
-        padding-right: 0;
+        max-height: 691px;
       }
 
-      &::after {
-        content: '';
-        display: inline-block;
-        width: 1px;
-        height: 99px;
-        background-color: var(--neutral-color-40);
-
-        @include tablet {
-          display: none;
-        }
+      @include small-tablet {
+        max-height: 991px;
       }
     }
 
-    &-num {
-      display: block;
-      margin-bottom: 8px;
+    &:nth-child(4n + 3) {
+      margin-top: 236px;
+
+      @include mini-desktop {
+        margin-top: 202px;
+      }
+
+      @include tablet {
+        margin-top: 174px;
+      }
+
+      @include small-tablet {
+        margin-top: 0;
+      }
+    }
+
+    & img {
+      margin-bottom: 24px;
+    }
+
+    &-title {
+      margin-bottom: 24px;
       font-weight: 600;
-      font-size: 64px;
-      line-height: 1.2;
-      color: var(--neutral-color-100);
+      color: #fff;
 
-      @include tablet {
-        font-size: 58px;
-      }
-
-      @include mobile {
-        font-size: 48px;
-      }
-
-      @include small-mobile {
-        font-size: 42px;
+      &--underlined {
+        font-weight: 600;
+        text-decoration: underline;
+        color: #fff;
+        text-decoration-skip-ink: none;
       }
     }
 
     &-text {
       font-weight: 500;
-      font-size: 18px;
       line-height: 1.78;
       color: var(--neutral-color-150);
     }
   }
-
-  &__list,
-  &__img {
-    margin-bottom: 80px;
-
-    @include mobile {
-      margin-bottom: 45px;
-    }
-  }
-
-  &__img {
-    @include tablet {
-      margin-bottom: 55px;
-    }
-
-    @include mobile {
-      margin-bottom: 45px;
-    }
-  }
-
-  &__info {
-    @include flex-justify-between;
-
-    @include tablet {
-      gap: 25px;
-      flex-direction: column;
-    }
-  }
-
-  &__title {
-    font-weight: 600;
-    letter-spacing: -0.04em;
-    color: var(--neutral-color-100);
-  }
-
-  &__desc {
-    max-width: 421px;
-    font-weight: 500;
-    line-height: 1.78;
-    color: var(--neutral-color-150);
-
-    @include tablet {
-      max-width: 700px;
-    }
-  }
 }
-/* stylelint-disable-next-line scss/double-slash-comment-empty-line-before */
+
 // <!--========FEATURES END========  -->

@@ -1,4 +1,5 @@
-.hero {
+/* stylelint-disable-next-line selector-class-pattern */
+.hero_1 {
   position: relative;
   padding: 87px 0 141px;
 
@@ -14,7 +15,7 @@
     padding: 90px 0 60px;
   }
 
-  &__container {
+  &_1 {
     @include flex-justify-between;
     align-items: flex-end;
 
@@ -25,19 +26,18 @@
     }
   }
 
-  &__left {
+  &_1_1 {
     @include mini-desktop {
       max-width: 617px;
     }
   }
 
-  &__title {
+  &_1_1_1 {
     margin-bottom: 114px;
     font-weight: 700;
     font-size: 80px;
     line-height: 1.2;
     letter-spacing: -0.04em;
-    color: var(--neutral-color-100);
 
     @include mini-desktop {
       margin-bottom: 74px;
@@ -59,8 +59,9 @@
     }
   }
 
-  &__subtitle {
+  &_1_1_1_1 {
     margin-bottom: 69px;
+    color: var(--neutral-color-150);
 
     @include mobile {
       margin-bottom: 55px;
@@ -73,183 +74,6 @@
     & br {
       @include mini-desktop {
         display: none;
-      }
-    }
-  }
-
-  &__form {
-    @include flex-align-center;
-    gap: 16px;
-
-    @include mini-desktop {
-      justify-content: center;
-    }
-
-    @include small-mobile {
-      gap: 10px;
-      flex-direction: column;
-    }
-  }
-
-  &__input {
-    border-bottom: 1px solid var(--neutral-color-40);
-    padding-bottom: 23px;
-    min-width: 280px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--neutral-color-100);
-    background-color: transparent;
-
-    @include small-tablet {
-      padding-bottom: 13px;
-    }
-
-    @include mobile {
-      min-width: 100px;
-      max-width: 180px;
-    }
-  }
-
-  &__btn {
-    padding: 16px 44px;
-    color: var(--neutral-color-10);
-    background-color: var(--neutral-color-100);
-
-    @include small-tablet {
-      padding: 12px 32px;
-    }
-  }
-
-  &__right {
-    position: relative;
-
-    @include mini-desktop {
-      display: none;
-    }
-  }
-
-  &__sales {
-    margin-bottom: 29px;
-    padding: 20px;
-
-    @include small-desktop {
-      max-width: 320px;
-    }
-
-    &-img {
-      @include small-desktop {
-        max-width: 280px;
-      }
-    }
-
-    &-title {
-      margin-bottom: 16px;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.5;
-      letter-spacing: -0.03em;
-      color: #1d1e25;
-    }
-  }
-
-  &__customer {
-    position: absolute;
-    top: -60px;
-    right: -140px;
-    display: inline-block;
-    padding: 15px 18px;
-
-    @include small-desktop {
-      top: -120px;
-      right: -30px;
-      margin-right: 20px;
-    }
-
-    &-title {
-      margin-bottom: 12px;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-      letter-spacing: -0.03em;
-      color: #1d1e25;
-    }
-  }
-
-  &__sales,
-  &__customer {
-    border-radius: 8px;
-    box-shadow: 20px 40px 80px 0 #5960871f;
-    background: #fff;
-  }
-
-  &__stats {
-    border-radius: 8px;
-    padding: 20px 29px;
-    box-shadow: 20px 40px 80px 0 #2d33511f;
-    text-align: left;
-    background: #000;
-
-    &-head {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 1.43;
-      color: #5c616f;
-    }
-
-    &-body {
-      &-td {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.3;
-        white-space: nowrap;
-        color: #fff;
-
-        &:nth-child(1) {
-          padding-right: 80px;
-        }
-      }
-
-      &-num {
-        display: inline-block;
-        margin-right: 3px;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.43;
-
-        &--green {
-          color: #60d39c;
-
-          &::before {
-            background: url('../assets/icons/green-arrow-icon.svg');
-          }
-        }
-
-        &--red {
-          color: #e35454;
-
-          &::before {
-            background: url('../assets/icons/red-arrow-icon.svg');
-          }
-        }
-
-        &--green,
-        &--red {
-          &::before {
-            content: '';
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-          }
-        }
-      }
-
-      &-text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.57;
-        letter-spacing: -0.04em;
-        color: #5c616e;
       }
     }
   }

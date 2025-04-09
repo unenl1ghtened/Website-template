@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 export const useHeader = () => {
-  const header = document.querySelector('.header');
+  const header = document.querySelector('.nav_1');
   if (!header) return;
 
   const heroSection = document.querySelector('.hero');
@@ -22,27 +22,27 @@ export const useHeader = () => {
   window.addEventListener('scroll', () => {
     let scrollDistance = window.scrollY;
 
-    // Добавляем класс header--show и header--background-transparent когда .header находится в самом верху страницы
+    // Добавляем класс nav_1--show и nav_1--background-transparent когда .header находится в самом верху страницы
     if (scrollDistance <= headerHeight) {
-      header.classList.add('header--show');
-      header.classList.add('header--background-transparent');
+      header.classList.add('nav_1--show');
+      header.classList.add('nav_1--background-transparent');
       // Добавляем класс header--fixed при прокрутке вниз, при условии что мы прокрутили больше высоты headerHeight
     } else if (
       scrollDistance > lastScrollTop &&
       scrollDistance > headerHeight
     ) {
-      header.classList.remove('header--show');
-      header.classList.add('header--fixed');
-      header.classList.remove('header--background-transparent');
+      header.classList.remove('nav_1--show');
+      header.classList.add('nav_1--fixed');
+      header.classList.remove('nav_1--background-transparent');
 
-      // Добавляем класс header--show и header--fixed при прокрутке вверх
+      // Добавляем класс nav_1--show и header--fixed при прокрутке вверх
     } else if (
       scrollDistance < lastScrollTop &&
       scrollDistance > headerHeight
     ) {
-      header.classList.add('header--show');
-      header.classList.add('header--fixed');
-      header.classList.remove('header--background-transparent');
+      header.classList.add('nav_1--show');
+      header.classList.add('nav_1--fixed');
+      header.classList.remove('nav_1--background-transparent');
     }
 
     lastScrollTop = scrollDistance;

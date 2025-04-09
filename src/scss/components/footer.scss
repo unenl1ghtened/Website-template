@@ -1,31 +1,12 @@
-.footer {
+/* stylelint-disable selector-class-pattern */
+// <!--========FOOTER START========  -->
+.footer_1 {
   padding: 112px 0 58px;
   color: #fff;
   background-color: var(--black-bg-color);
 
   @include mobile {
     padding-top: 60px;
-  }
-
-  &__head {
-    @include flex-all-between;
-    margin-bottom: 134px;
-
-    @include tablet {
-      margin-bottom: 80px;
-    }
-
-    @include tablet {
-      gap: 20px;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    @include mobile {
-      align-items: center;
-      margin-bottom: 60px;
-      text-align: center;
-    }
   }
 
   &__title {
@@ -56,7 +37,7 @@
     background-color: #fff;
   }
 
-  &__logo {
+  &_2_1_1 {
     display: inline-block;
     margin-bottom: 19px;
 
@@ -65,7 +46,7 @@
     }
   }
 
-  &__body {
+  &_2 {
     @include flex-all-between;
     gap: 15px;
     margin-bottom: 56px;
@@ -76,7 +57,7 @@
       align-items: flex-start;
     }
 
-    &-info {
+    &_1 {
       @include tablet {
         @include flex-align-center;
         gap: 30px;
@@ -94,7 +75,7 @@
       }
     }
 
-    &-desc {
+    &_1_2 {
       max-width: 292px;
       font-weight: 500;
       line-height: 1.62;
@@ -106,59 +87,12 @@
     }
   }
 
-  &__list {
-    display: flex;
-    gap: 93px;
-
-    @include mini-desktop {
-      gap: 40px;
-    }
-
-    @include tablet {
-      @include flex-all-between;
-    }
-
-    @include tablet {
-      gap: 40px 80px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    @include mobile {
-      gap: 40px 50px;
-    }
-
-    @include small-mobile {
-      text-align: center;
-    }
-  }
-
-  &__item {
-    &-title {
-      margin-bottom: 24px;
-      padding: 0;
-      font-weight: 700;
-      line-height: 1.5;
-      color: #fff;
-      pointer-events: none;
-    }
-
-    @include small-tablet {
-      font-size: 24px;
-    }
-
-    @include mobile {
-      min-width: 143px;
-      font-size: 18px;
-    }
-  }
-
-  &__subitem {
+  &_3_1_1_2_1 {
     &:not(:last-child) {
       margin-bottom: 16px;
     }
 
-    &-link {
+    &_1 {
       position: relative;
       font-weight: 400;
       line-height: 1.5;
@@ -196,21 +130,71 @@
     }
   }
 
-  &__nav {
+  &_3 {
     @include tablet {
       width: 100%;
     }
 
     @include small-tablet {
       display: flex;
-      justify-content: center;
+      justify-content: start;
+    }
+
+    &_1 {
+      display: flex;
+      gap: 60px;
+
+      @include mini-desktop {
+        gap: 40px;
+      }
+
+      @include tablet {
+        @include flex-all-between;
+      }
+
+      @include tablet {
+        gap: 40px 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @include mobile {
+        gap: 40px 50px;
+      }
+
+      @include small-mobile {
+        text-align: center;
+      }
+
+      &_1 {
+        max-width: 200px;
+
+        &--contact {
+          max-width: 320px;
+        }
+
+        &_1 {
+          margin-bottom: 24px;
+          padding: 0;
+          font-weight: 700;
+          line-height: 1.5;
+          color: #fff;
+          pointer-events: none;
+        }
+
+        @include small-tablet {
+          font-size: 24px;
+        }
+
+        @include mobile {
+          min-width: 143px;
+          font-size: 18px;
+        }
+      }
     }
   }
 
-  &__bottom {
-    @include flex-all-between;
-    gap: 20px 10px;
-    flex-wrap: wrap;
+  &_4 {
     border-top: 1px solid var(--neutral-color-70);
     padding-top: 40px;
 
@@ -218,157 +202,12 @@
       justify-content: center;
     }
 
-    &-lists {
-      @include flex-align-center;
-      gap: 72px;
-
-      @include tablet {
-        gap: 40px;
-      }
-
-      @include mobile {
-        gap: 15px;
-        flex-direction: column;
-      }
-    }
-
-    &-list {
-      display: flex;
-      gap: 40px;
-
-      @include tablet {
-        gap: 20px;
-      }
-
-      @include small-mobile {
-        gap: 10px 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-
-    &-link {
-      position: relative;
+    &_4_1 {
       font-weight: 500;
       line-height: 1.43;
       color: #fff;
-
-      &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: -5px;
-        left: 0;
-        height: 1px;
-        background: #fff;
-        opacity: 0;
-        visibility: hidden;
-        transition:
-          opacity var(--transition),
-          visibility var(--transition);
-      }
-
-      &:hover {
-        &::after {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-    }
-  }
-
-  &__social {
-    &-list {
-      @include flex-align-center;
-      gap: 24px;
-    }
-
-    &-link {
-      transition: opacity var(--transition);
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  &__copyright {
-    font-weight: 500;
-    line-height: 1.43;
-    color: #fff;
-  }
-}
-
-.accordion-list {
-  @include small-tablet {
-    display: inline-block;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  @include mobile {
-    max-width: 250px;
-  }
-
-  &__item {
-    @include small-tablet {
-      padding-bottom: 10px;
-    }
-  }
-
-  &__control {
-    &-title {
-      color: #fff;
-    }
-
-    @include small-tablet {
-      margin-bottom: 10px;
-      padding: 0;
-      width: 100%;
-      color: var(--neutral-color-100);
-      pointer-events: auto;
-    }
-
-    @include small-tablet {
-      @include flex-all-between;
-      position: relative;
-
-      &::after {
-        transform: rotate(90deg);
-      }
-
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 0;
-        display: inline-block;
-        border-radius: 2px;
-        width: 18px;
-        height: 3px;
-        background-color: #fff;
-      }
-    }
-  }
-
-  &__content {
-    @include small-tablet {
-      display: none;
-    }
-  }
-
-  &__item--opened {
-    .accordion-list {
-      &__content {
-        display: inline-block;
-      }
-
-      &__control {
-        &::after {
-          display: none;
-        }
-      }
     }
   }
 }
+/* stylelint-disable-next-line scss/double-slash-comment-empty-line-before */
+// <!--========FOOTER END========  -->

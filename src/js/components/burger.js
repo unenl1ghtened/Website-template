@@ -6,16 +6,16 @@ export const useBurger = () => {
   const body = document.body;
 
   const closeBurgerMenu = () => {
-    burgerBtn.classList.remove('burger--active');
+    burgerBtn.classList.remove('nav_1_1_1_1_1_1_1_1_1--active');
     overlay.classList.remove('overlay--visible');
-    burgerMenu.classList.remove('header__right--visible');
+    burgerMenu.classList.remove('nav_1_1_1_1--visible');
     body.classList.remove('body--fixed');
   };
 
   burgerBtn.addEventListener('click', () => {
-    burgerBtn.classList.toggle('burger--active');
+    burgerBtn.classList.toggle('nav_1_1_1_1_1_1_1_1_1--active');
     overlay.classList.toggle('overlay--visible');
-    burgerMenu.classList.toggle('header__right--visible');
+    burgerMenu.classList.toggle('nav_1_1_1_1--visible');
     body.classList.toggle('body--fixed');
   });
 

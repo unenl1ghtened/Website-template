@@ -1,4 +1,5 @@
-@mixin burger {
+/* stylelint-disable scss/at-mixin-pattern */
+@mixin nav_1_1_1_1_1_1_1_1_1 {
   --burger-width: 28px;
   --burger-height: 22px;
   --burger-line-height: 3px;
@@ -40,7 +41,7 @@
     transition-duration: 0.2s;
   }
 
-  &__line {
+  &_1 {
     position: absolute;
     top: 50%;
     left: 0;
@@ -55,7 +56,7 @@
 
   &::before,
   &::after,
-  &__line {
+  &_1 {
     border-radius: 28px;
   }
 
@@ -77,7 +78,7 @@
     }
 
     /* stylelint-disable-next-line selector-class-pattern */
-    .burger__line {
+    .nav_1_1_1_1_1_1_1_1_1_1 {
       transform: scale(0);
     }
   }

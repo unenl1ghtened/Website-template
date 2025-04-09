@@ -3,18 +3,18 @@ export const useHeader = () => {
   const header = document.querySelector('.nav_1');
   if (!header) return;
 
-  const heroSection = document.querySelector('.hero');
+  const heroSection = document.querySelector('.hero_1');
   const headerHeight = header.offsetHeight;
   let lastScrollTop = 0;
 
   // Задем отступ от .hero т.к. .header выпадает изи потока
   if (heroSection) {
-    heroSection.style.marginTop = `${headerHeight}px`;
+    heroSection.style.marginTop = `${headerHeight + 50}px`;
   } else {
     const nextSection = header.nextElementSibling;
 
     if (nextSection) {
-      nextSection.style.marginTop = `${headerHeight}px`;
+      nextSection.style.marginTop = `${headerHeight + 50}px`;
     }
   }
   document.body.style.marginTop = `${headerHeight}px`;

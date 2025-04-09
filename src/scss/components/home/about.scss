@@ -1,0 +1,204 @@
+// <!--========ABOUT START========  -->
+.about {
+  padding: 160px 0 94px;
+
+  @include mobile {
+    padding: 60px 0 64px;
+  }
+
+  &__container {
+    @include flex-all-between;
+    gap: 58px;
+
+    @include mini-desktop {
+      gap: 40px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include mobile {
+      gap: 30px;
+    }
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__stats {
+    position: absolute;
+    right: 36px;
+    bottom: 40px;
+    padding: 18px;
+    max-width: 290px;
+    background-color: #fff;
+
+    @include mobile {
+      right: 16px;
+      bottom: 20px;
+    }
+
+    @include small-mobile {
+      right: 12px;
+      bottom: 12px;
+      padding: 14px;
+      max-width: 240px;
+    }
+
+    &-head {
+      @include flex-all-between;
+      margin-bottom: 19px;
+
+      @include small-mobile {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-title {
+      font-weight: 600;
+      line-height: 1.5;
+      color: #1d1e25;
+    }
+
+    &-item {
+      @include flex-align-center;
+      gap: 26px;
+
+      &:not(:last-child) {
+        border-bottom: 0.73px solid #ededed;
+        padding-bottom: 23px;
+      }
+
+      &:last-child {
+        padding-top: 23px;
+      }
+
+      @include small-mobile {
+        gap: 16px;
+      }
+
+      &-img {
+        @include small-mobile {
+          width: 65px;
+        }
+      }
+
+      &-title {
+        margin-bottom: 6px;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 1.5;
+        color: #7e8492;
+      }
+
+      &-price {
+        @include flex-align-center;
+        gap: 12px;
+
+        &-num {
+          font-weight: 700;
+          font-size: 23px;
+          line-height: 1.2;
+          color: #1d1e25;
+
+          @include mobile {
+            font-size: 18px;
+          }
+        }
+
+        &-proc {
+          @include flex-align-center;
+          gap: 5px;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 1.5;
+          color: #1d1e25;
+        }
+      }
+
+      &-desc {
+        margin-top: 9px;
+        font-weight: 400;
+        font-size: 8px;
+        color: var(--neutral-color-150);
+
+        & span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__desc {
+    max-width: 557px;
+
+    @include mini-desktop {
+      width: 100%;
+      max-width: 992px;
+    }
+
+    &-title {
+      margin-bottom: 24px;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
+
+      &-text {
+        margin-bottom: 40px;
+        max-width: 360px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #7e8492;
+
+        @include mini-desktop {
+          width: 100%;
+          max-width: 700px;
+        }
+
+        @include mobile {
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    &-item {
+      @include flex-align-center;
+      gap: 16px;
+      max-width: 393px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.78;
+      color: var(--neutral-color-100);
+
+      @include mini-desktop {
+        max-width: 600px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 32px;
+
+        @include mobile {
+          margin-bottom: 20px;
+        }
+      }
+
+      &::before {
+        content: '';
+        display: inline-block;
+        padding-right: 20px;
+        width: 20px;
+        height: 20px;
+        background: url('../assets/icons/features-tick-icon.svg');
+      }
+    }
+  }
+}
+/* stylelint-disable-next-line scss/double-slash-comment-empty-line-before */
+// <!--========ABOUT END========  -->

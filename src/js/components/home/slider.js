@@ -73,7 +73,7 @@ export const useInsightSlider = () => {
   window.addEventListener('resize', handleResize);
 };
 export const useTestimonialsSlider = () => {
-  new Swiper('.testimonials__slider', {
+  new Swiper('.reviews__slider', {
     modules: [Navigation, EffectFade],
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -83,8 +83,8 @@ export const useTestimonialsSlider = () => {
       crossFade: true,
     },
     navigation: {
-      prevEl: '.testimonials__btn--prev',
-      nextEl: '.testimonials__btn--next',
+      prevEl: '.reviews__btn--prev',
+      nextEl: '.reviews__btn--next',
     },
   });
 };

@@ -1,4 +1,5 @@
-.testimonials {
+// <!--========REVIEWS START========  -->
+.reviews {
   padding: 69px 0 160px;
 
   @include mobile {
@@ -170,3 +171,5 @@
     }
   }
 }
+/* stylelint-disable-next-line scss/double-slash-comment-empty-line-before */
+// <!--========REVIEWS END========  -->

@@ -9,19 +9,16 @@ import {
   useInsightSlider,
   useTestimonialsSlider,
 } from './components/home/slider.js';
-import {
-  useCollaborateHeroSlider,
-  useCollaborateTeamSlider,
-} from './components/collaborate/slider.js';
-import { usePhone } from './components/contact/phone.js';
-import { useInputValidation } from './components/contact/input-validation.js';
+import { useTeamSlider } from './components/home/team-slider.js';
+import { usePhone } from './components/home/phone.js';
+import { useInputValidation } from './components/home/input-validation.js';
 
 useBurger();
 useHeader();
 useInsightSlider();
 useTestimonialsSlider();
-useCollaborateHeroSlider();
-useCollaborateTeamSlider();
+
+useTeamSlider();
 usePhone();
 useInputValidation();
 useTheme();

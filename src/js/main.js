@@ -5,19 +5,14 @@ import '/scss/main.scss';
 import { useBurger } from './components/burger.js';
 import { useHeader } from './components/scroll.js';
 import { useTheme } from './components/theme.js';
-import {
-  useInsightSlider,
-  useTestimonialsSlider,
-} from './components/home/slider.js';
+import { useTestimonialsSlider } from './components/home/testi-slider.js';
 import { useTeamSlider } from './components/home/team-slider.js';
 import { usePhone } from './components/home/phone.js';
 import { useInputValidation } from './components/home/input-validation.js';
 
 useBurger();
 useHeader();
-useInsightSlider();
 useTestimonialsSlider();
-
 useTeamSlider();
 usePhone();
 useInputValidation();

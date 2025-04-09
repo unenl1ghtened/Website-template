@@ -29,8 +29,8 @@ export const useTeamSlider = () => {
     },
 
     navigation: {
-      nextEl: '.team__btn--next',
-      prevEl: '.team__btn--prev',
+      nextEl: '.team_1__btn--next',
+      prevEl: '.team_1__btn--prev',
     },
   });
 };

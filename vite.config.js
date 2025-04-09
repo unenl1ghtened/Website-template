@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   root: './src',
-  base: './',
+  base: '/Website-template/',
   server: {
     port: 3000,
     open: true,

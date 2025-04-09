@@ -5,7 +5,7 @@ import 'swiper/css/effect-fade';
 import { Navigation, EffectFade } from 'swiper/modules';
 
 export const useTestimonialsSlider = () => {
-  new Swiper('.reviews__slider', {
+  new Swiper('.reviews_1__slider', {
     modules: [Navigation, EffectFade],
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -15,8 +15,8 @@ export const useTestimonialsSlider = () => {
       crossFade: true,
     },
     navigation: {
-      prevEl: '.reviews__btn--prev',
-      nextEl: '.reviews__btn--next',
+      prevEl: '.reviews_1__btn--prev',
+      nextEl: '.reviews_1__btn--next',
     },
   });
 };

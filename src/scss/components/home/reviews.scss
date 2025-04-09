@@ -1,12 +1,13 @@
 // <!--========REVIEWS START========  -->
-.reviews {
+/* stylelint-disable-next-line selector-class-pattern */
+.reviews_1 {
   padding: 69px 0 160px;
 
   @include mobile {
     padding: 5px 0 70px;
   }
 
-  &__head {
+  &_1_1 {
     @include flex-all-between;
     margin-bottom: 48px;
 
@@ -26,7 +27,7 @@
     }
   }
 
-  &__title {
+  &_1_1_1 {
     max-width: 530px;
     font-weight: 600;
     line-height: 1.2;
@@ -34,15 +35,15 @@
     color: var(--neutral-color-100);
   }
 
-  &__desc {
+  &_1_1_1_1 {
     max-width: 376px;
     font-weight: 500;
     line-height: 1.78;
     color: var(--neutral-color-150);
   }
 
-  &__title,
-  &__desc {
+  &_1_1_1,
+  &_1_1_1_1 {
     @include tablet {
       max-width: none;
     }
@@ -103,13 +104,6 @@
       @include flex-align-center;
       gap: 24px;
       font-style: normal;
-
-      &-avatar {
-        overflow: hidden;
-        border-radius: 50%;
-        width: 56px;
-        height: 56px;
-      }
 
       &-name {
         font-weight: 600;
